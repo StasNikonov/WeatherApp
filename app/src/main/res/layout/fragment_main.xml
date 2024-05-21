@@ -63,7 +63,7 @@
                 android:fontFamily="@font/adamina"
                 android:text="20°C"
                 android:textColor="@color/white"
-                android:textSize="65sp"
+                android:textSize="55sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvCity" />
@@ -117,6 +117,20 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvCondition"
                 android:contentDescription="Update"/>
+
+            <ImageButton
+                android:id="@+id/ibSearch"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:contentDescription="Search"
+                android:src="@drawable/ic_search"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ibSync" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
