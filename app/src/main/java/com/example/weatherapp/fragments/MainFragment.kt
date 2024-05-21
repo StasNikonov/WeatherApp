@@ -64,7 +64,7 @@ class MainFragment : Fragment() {
 
     private fun updateCurrentCard() = with(binding){
         model.liveDataCurrent.observe(viewLifecycleOwner){
-            val maxMinTemp = "${it.maxTemp}°C/${it.minTemp}°C"
+            val maxMinTemp = "${it.maxTemp}°C / ${it.minTemp}°C"
             tvData.text = it.time
             tvCity.text = it.city
             tvCurrentTemp.text = it.currentTemp + "°C"
@@ -147,6 +147,7 @@ class MainFragment : Fragment() {
             )
             list.add(item)
         }
+        model.liveDataList.value = list
         return list
     }
 
